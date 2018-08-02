@@ -1,0 +1,7 @@
+table {
+  display: table;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  font-size: 2.0rem;
+}
