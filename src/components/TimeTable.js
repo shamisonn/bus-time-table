@@ -2,12 +2,9 @@ import React, { Component } from 'react';
 import './TimeTable.css'
 
 const Tables = (props) => {
-  console.log(props);
   if (props.suggestTimes.length === 0) {
-    console.log("len == 0 ");
     return <div>no entry</div>
   }
-
   return <table>
     <tbody>
     {props.suggestTimes.map(t => <tr key={t}><td>{t}</td></tr>)}
@@ -19,7 +16,6 @@ const Tables = (props) => {
 class TimeTable extends Component {
   constructor(props) {
     super(props);
-    console.log(props.suggestTimes);
     this.state ={};
   }
   render() {

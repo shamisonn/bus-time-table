@@ -76,47 +76,36 @@ class InputsView extends Component {
   }
 
   fromHandleChange(e) {
-    console.log("from: " + e.target.value);
     if (e.target.value === "univ" ) {
       this.setState({to: "kitasaka"});
     } else {
       this.setState({to: "univ"});
     }
     this.setState({from: e.target.value});
-    console.log(this.state);
   }
 
   toHandleChange(e) {
-    console.log("to: " + e.target.value);
     if (e.target.value === "univ" ) {
       this.setState({from: "kitasaka"});
     } else {
       this.setState({from: "univ"});
     }
     this.setState({to: e.target.value});
-    console.log(this.state);
   }
 
   howHandleChange(e) {
-    console.log("how: " + e.target.value);
     this.setState({how: e.target.value});
-    console.log(this.state);
   }
 
   dateHandleChange(e) {
-    console.log("date: " + e.target.value);
     this.setState({date: moment(e.target.value).format("YYYY-MM-DDTHH:mm")});
-    console.log(this.state);
   }
 
   isVacHandleChange(e) {
-    console.log("isVac: " + e.target.value);
     this.setState({isVac: e.target.value});
-    console.log(this.state);
   }
 
   btnHandleClick() {
-    console.log(this.state);
     this.props.suggest(this.state)
   }
 
