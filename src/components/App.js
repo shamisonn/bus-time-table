@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import InputsView from './InputsView'
 import TimeTable from './TimeTable'
-import suggestTimes from '../functions/SuggestTimes'
+import SuggestTimes from '../functions/SuggestTimes'
 
 // entry point
 class App extends Component {
@@ -15,7 +15,7 @@ class App extends Component {
   }
 
   suggest(inputs) {
-    this.setState({ times: suggestTimes(inputs)})
+    this.setState({ times: SuggestTimes(inputs)})
   }
 
   render() {
