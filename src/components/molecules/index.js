@@ -16,3 +16,5 @@ const DateInput = ({className, title, defaultDate, onChange}) => {
   </div>
 };
 
+export {SelectInput, DateInput}
+
