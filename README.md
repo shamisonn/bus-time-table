@@ -2,11 +2,14 @@
 
 これはTDUにおける鳩山キャンパスのバス時刻表アプリです。
 
-This is bus time table on hatoyama in TDU.
+go https://shamisonn.github.io/bus-time-table/
 
-implements by React(and redux, but not deployed yet.)
+# Feature
 
-check https://shamisonn.github.io/bus-time-table/
+- PWA対応済み。
+- オフライン対応済み。
+- デザインはもうだめ。
+- Yahoo乗り換えアプリを参考にしました。
 
 # For developer
 
@@ -15,6 +18,12 @@ $ yarn install
 $ yarn run start
 ```
 
-# To Do
+tips:
 
-go issue
+- reactで作られ、reduxを用いている。
+- オフライン対応としてworkboxを使った。
+- ついでにpwa化した。
+
+# 要望
+
+write issue
