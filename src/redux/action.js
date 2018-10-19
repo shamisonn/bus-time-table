@@ -24,7 +24,7 @@ export const setDate = date => ({
 });
 
 export const setIsVac = isVac => ({
-  type: types.SET_DATE,
+  type: types.SET_IS_VAC,
   isVac
 });
 

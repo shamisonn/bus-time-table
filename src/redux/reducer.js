@@ -69,7 +69,7 @@ function forms(state = initialFormState, action) {
     case types.SET_IS_VAC:
       return {
         ...state,
-        isVac: action.isVac
+        isVac: action.isVac.toString()
       };
     default:
       return state;
