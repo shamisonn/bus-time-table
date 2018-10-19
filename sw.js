@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox
 self.__precacheManifest = [
   {
     "url": "asset-manifest.json",
-    "revision": "0e342851b6fec70dc43f40ba67ff14ed"
+    "revision": "236e5356bcfa5481d6114eb4ac3bf636"
   },
   {
     "url": "favicon.ico",
@@ -61,7 +61,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "564b21ea7baae1e7fc94693aff9b8ff9"
+    "revision": "793643f7d11e229ab35c74c237bd9082"
   },
   {
     "url": "manifest.json",
@@ -69,11 +69,11 @@ self.__precacheManifest = [
   },
   {
     "url": "service-worker.js",
-    "revision": "c68d8934b44fcba7dc298dcc97156fe1"
+    "revision": "6a0aa5f05f98c2fda4dab723dd2a68b6"
   },
   {
-    "url": "static/css/main.56798883.css",
-    "revision": "22b9393a888d6d0d4ee06ff00a24f1f3"
+    "url": "static/css/main.8dc7f1c0.css",
+    "revision": "e95fdb45dd78354402bfaf52d75b1ef2"
   },
   {
     "url": "static/js/main.7a5996bf.js",
@@ -84,3 +84,5 @@ workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerNavigationRoute("/index.html");
+
+workbox.routing.registerRoute(/^https:\/\/stackpath\.bootstrapcdn\.com\/bootstrap\/4\.1\.3\/css\/bootstrap\.min\.css/, workbox.strategies.cacheFirst({ "cacheName":"bootstrap-min", plugins: [new workbox.expiration.Plugin({"maxEntries":80,"maxAgeSeconds":86400,"purgeOnQuotaError":false})] }), 'GET');
