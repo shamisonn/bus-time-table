@@ -1,3 +1,22 @@
 .App {
-  text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
 }
+
+.input-form {
+    width: 250px;
+    border: solid 3px #000000;
+}
+
+.time-table {
+    width: 250px;
+    border: solid 3px #000000;
+}
+

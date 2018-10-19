@@ -8,7 +8,7 @@ import InputForm from "./organisms/InputForm";
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="App">
         <InputForm/>
         <TimeTable/>
       </div>

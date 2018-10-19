@@ -3,10 +3,10 @@ import {connect} from "react-redux";
 
 import {SingleTable} from "../molecules";
 
+import "./TimeTable.css"
+
 const TimeTable = ({times}) => {
-  return <div className="TimeTable">
-    <h1>TimeTable</h1>
-    <p>移動時間はだいたい10分くらい。以下, 出発時間</p>
+  return <div className="time-table">
     <SingleTable times={times}/>
   </div>
 };

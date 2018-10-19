@@ -5,6 +5,8 @@ import {bindActionCreators} from "redux";
 import * as Actions from "../../redux/action";
 import {ButtonForm, DateForm, FromForm, HowForm, IsVacForm, ToForm} from "../molecules";
 
+import './InputForm.css';
+
 const InputForm = ({formState, actions}) => {
   return  <div className="input-form">
     <FromForm defaultValue={formState.from} fromHandleChange={e => actions.setFrom(e.target.value) }/>
