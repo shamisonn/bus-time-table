@@ -9,7 +9,7 @@ const initialFormState = {
   to: "univ",
   how: "departure",
   date: moment().format("YYYY-MM-DDTHH:mm"),
-  isVac: false
+  isVac: "false"
 };
 function forms(state = initialFormState, action) {
   switch(action.type) {

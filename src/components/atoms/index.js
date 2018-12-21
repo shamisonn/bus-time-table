@@ -8,7 +8,7 @@ Text.propTypes = {
 
 const Select = ({options, onChange, defaultValue}) =>
   <select onChange={onChange} value={defaultValue}>
-    {options.map((o) => <option value={o[0]}>{o[1]}</option>)}
+    {options.map((o) => <option key={o[0]} value={o[0]}>{o[1]}</option>)}
   </select>;
 Select.propTypes = {
   options: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)).isRequired,
